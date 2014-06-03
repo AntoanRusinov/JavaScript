@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<p>
+			Click the button to sort the array in ascending order.
+		</p>
+
+		<button onclick="myFunction()">
+			SORT
+		</button>
+
+		<p id="demo"></p>
+
+		<script>
+			document.write("40, 100, 1, 5, 25, 10");
+			function myFunction() {
+				var points = [40, 100, 1, 5, 25, 10];
+				points.sort(function(a, b) {
+					return a - b
+				});
+				document.getElementById("demo").innerHTML = points;
+			}
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<p>
+			Click the button to remove (pop) the last array element.
+		</p>
+
+		<button onclick="myFunction()">
+			Click me!
+		</button>
+
+		<p id="demo"></p>
+
+		<script>
+			var fruits = ["Banana", "Orange", "Apple", "Mango", "Melon", "Lemon", "Kiwi", "Cherry", "Strawbery"];
+
+			function myFunction() {
+				fruits.pop();
+				document.getElementById("demo").innerHTML = fruits;
+			}
+		</script>
+
+	</body>
+</html>
